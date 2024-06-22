@@ -1,0 +1,23 @@
+:root {
+    // COLORS
+    //primary
+    --red1: hsl(12, 88%, 59%);
+    --blue1: hsl(228, 39%, 23%);
+    //secondary
+    --blue2: hsl(227, 12%, 61%);
+    --blue3: hsl(233, 12%, 13%);
+    --red2: hsl(13, 100%, 96%);
+    --gray1: hsl(0, 0%, 98%);
+
+    // TYPO
+    //family
+    --ff-primary: "Be Vietnam Pro", sans-serif;
+    //size
+    --fs-regular: 1rem;
+    --fs-medium: 1.5rem;
+    --fs-bold: 2rem;
+    //weight
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+}
