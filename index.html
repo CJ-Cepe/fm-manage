@@ -7,79 +7,100 @@
   <meta name="author" content="CJ-Cepe">
   <meta name="description" content="Landing page for Manage">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-
+  <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"
+    async></script>
+  <script src="./main.js" defer></script>
   <title>Manage</title>
 </head>
 
 <body>
   <header class="header">
-    <a href="#"><img src="./images/logo.svg" alt="manage logo" class="header__logo"></a>
+    <div class="section__container section__container--flex">
+      <a href="#" class="header__logo"><img src="./images/logo.svg" alt="manage logo"></a>
 
-    <nav class="header__nav nav">
-      <ul role="list">
-        <li><a href="" class="header__nav-link">Pricing</a></li>
-        <li><a href="" class="header__nav-link">Product</a></li>
-        <li><a href="" class="header__nav-link">About Us</a></li>
-        <li><a href="" class="header__nav-link">Careers</a></li>
-        <li><a href="" class="header__nav-link">Community</a></li>
-      </ul>
-    </nav>
+      <nav class="header__nav nav">
+        <button class="hamburger" aria-controls="header__nav-list" aria-expanded="false">
+          <img src="./images/icon-hamburger.svg" alt="" class="hamburger__icon-open" aria-hidden="true">
+          <img src="./images/icon-close.svg" alt="" class="hamburger__icon-close" aria-hidden="true">
+          <span class="visibility-hidden"> menu </span>
+        </button>
 
-    <button class="header__button button">Get Started</button>
+        <div class="header__nav-overlay" role="presentation" aria-hidden="true"></div>
+
+        <ul role="list" class="header__nav-list nav__list" id="header__nav-list">
+          <li><a href="" class="header__nav-link">Pricing</a></li>
+          <li><a href="" class="header__nav-link">Product</a></li>
+          <li><a href="" class="header__nav-link">About Us</a></li>
+          <li><a href="" class="header__nav-link">Careers</a></li>
+          <li><a href="" class="header__nav-link">Community</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__button button">Get Started</button>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero__text">
-        <h1 class="hero__header">Bring everyone together to build better products.</h1>
-        <p class="hero__content">Manage makes it simple for software teams to plan day-to-day
-          tasks while keeping the larger team goals in view.</p>
-        <button class="hero__button button">Get Started</button>
-      </div>
-      <div class="hero__figure">
-        <img class="hero__img" src="./images/illustration-intro.svg" alt="">
+      <div class="container">
+        <div class="hero__text">
+          <h1 class="hero__header">Bring everyone together to build better products.</h1>
+          <p class="hero__content">Manage makes it simple for software teams to plan day-to-day
+            tasks while keeping the larger team goals in view.</p>
+          <button class="hero__button button">Get Started</button>
+        </div>
+        <div class="hero__figure">
+          <img class="hero__img" src="./images/illustration-intro.svg" alt="">
+        </div>
       </div>
     </section>
 
     <section class="overview">
-      <div class="overview__text">
-        <h2 class="overview__header">What’s different about Manage?</h2>
-        <p class="overview__content">Manage provides all the functionality your team needs, without
-          the complexity. Our software is tailor-made for modern digital
-          product teams.</p>
-      </div>
+      <div class="container">
+        <div class="overview__text">
+          <h2 class="overview__header">What’s different about Manage?</h2>
+          <p class="overview__content">Manage provides all the functionality your team needs, without
+            the complexity. Our software is tailor-made for modern digital
+            product teams.</p>
+        </div>
 
-      <div class="overview__benefits">
-        <ol class="overview__list">
-          <li class="overview__benefit">
-            <div class="overview__benefit-content">
-              <h3 class="overview__benefit-title">Track company-wide progress</h3>
-              <p class="overview__benefit-description">See how your day-to-day tasks fit into the wider vision. Go
-                from
-                tracking progress at the milestone level all the way done to the
-                smallest of details. Never lose sight of the bigger picture again.</p>
-            </div>
-          </li>
-          <li class="overview__benefit">
-            <div class="overview__benefit-content">
-              <h3 class="overview__benefit-title">Advanced built-in reports</h3>
-              <p class="overview__benefit-description">Set internal delivery estimates and track progress toward
-                company
-                goals. Our customisable dashboard helps you build out the reports
-                you need to keep key stakeholders informed.</p>
-            </div>
-          </li>
-          <li class="overview__benefit">
-            <div class="overview__benefit-content">
-              <h3 class="overview__benefit-title">Everything you need in one place</h3>
-              <p class="overview__benefit-description">Stop jumping from one service to another to communicate, store
-                files,
-                track tasks and share documents. Manage offers an all-in-one team
-                productivity solution.</p>
-            </div>
-          </li>
-        </ol>
+        <div class="overview__benefits">
+          <ol class="overview__list">
+            <li class="overview__benefit">
+              <div class="overview__benefit-content">
+                <h3 class="overview__benefit-title">Track company-wide progress</h3>
+                <p class="overview__benefit-description">See how your day-to-day tasks fit into the wider vision. Go
+                  from
+                  tracking progress at the milestone level all the way done to the
+                  smallest of details. Never lose sight of the bigger picture again.</p>
+              </div>
+            </li>
+            <li class="overview__benefit">
+              <div class="overview__benefit-content">
+                <h3 class="overview__benefit-title">Advanced built-in reports</h3>
+                <p class="overview__benefit-description">Set internal delivery estimates and track progress toward
+                  company
+                  goals. Our customisable dashboard helps you build out the reports
+                  you need to keep key stakeholders informed.</p>
+              </div>
+            </li>
+            <li class="overview__benefit">
+              <div class="overview__benefit-content">
+                <h3 class="overview__benefit-title">Everything you need in one place</h3>
+                <p class="overview__benefit-description">Stop jumping from one service to another to communicate, store
+                  files,
+                  track tasks and share documents. Manage offers an all-in-one team
+                  productivity solution.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
       </div>
     </section>
 
@@ -111,61 +132,65 @@
     </section>
     <!-- ------- -->
 
-    <section class="call-to-action">
-      <h2 class="call-to-action__header">Simplify how your team works today.</h2>
-      <button class="call-to-action__button">Get Started</button>
+    <section class="action">
+      <div class="container">
+        <h2 class="action__header">Simplify how your team works today.</h2>
+        <button class="action__button button" data-type="inverted">Get Started</button>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <a href="#"><img src="./images/logo.svg" alt="manage logo" class="footer__logo"></a>
+    <div class="container">
+      <a href="#"><img src="./images/logo.svg" alt="manage logo" class="footer__logo"></a>
 
-    <ul class="footer__socials">
-      <li>
-        <a href="https://www.facebook.com/" class="footer__socials-link" aria-label="facebook" target="_blank">
-          <img src="./images/icon-facebook.svg" class="footer__socials-icon" alt="facebook">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/" class="footer__socials-link" aria-label="youtube" target="_blank">
-          <img src="./images/icon-youtube.svg" class="footer__socials-icon" alt="youtube">
-        </a>
-      </li>
-      <li>
-        <a href="https://x.com/" class="footer__socials-link" aria-label="twitter" target="_blank">
-          <img src="./images/icon-twitter.svg" class="footer__socials-icon" alt="twitter">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.pinterest.com/" class="footer__socials-link" aria-label="pinterest" target="_blank">
-          <img src="./images/icon-pinterest.svg" class="footer__socials-icon" alt="pinterest">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/" class="footer__socials-link" aria-label="instagram" target="_blank">
-          <img src="./images/icon-instagram.svg" class="footer__socials-icon" alt="instagram">
-        </a>
-      </li>
-    </ul>
-
-    <nav class="footer__nav">
-      <ul class="footer__nav-list" role="list" aria-label="footer">
-        <li><a href="#" class="footer__nav-item">Home</a></li>
-        <li><a href="#" class="footer__nav-item">Pricing</a></li>
-        <li><a href="#" class="footer__nav-item">Products</a></li>
-        <li><a href="#" class="footer__nav-item">About Us</a></li>
-        <li><a href="#" class="footer__nav-item">Careers</a></li>
-        <li><a href="#" class="footer__nav-item">Community</a></li>
-        <li><a href="#" class="footer__nav-item">Privacy Policy</a></li>
+      <ul class="footer__socials">
+        <li>
+          <a href="https://www.facebook.com/" class="footer__socials-link" aria-label="facebook" target="_blank">
+            <img src="./images/icon-facebook.svg" class="footer__socials-icon" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" class="footer__socials-link" aria-label="youtube" target="_blank">
+            <img src="./images/icon-youtube.svg" class="footer__socials-icon" alt="youtube">
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/" class="footer__socials-link" aria-label="twitter" target="_blank">
+            <img src="./images/icon-twitter.svg" class="footer__socials-icon" alt="twitter">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/" class="footer__socials-link" aria-label="pinterest" target="_blank">
+            <img src="./images/icon-pinterest.svg" class="footer__socials-icon" alt="pinterest">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" class="footer__socials-link" aria-label="instagram" target="_blank">
+            <img src="./images/icon-instagram.svg" class="footer__socials-icon" alt="instagram">
+          </a>
+        </li>
       </ul>
-    </nav>
 
-    <form action="" class="footer__form">
-      <input class="footer__email-input" type="email" placeholder="Updates in your inbox…" required>
-      <button class="footer__button button"> Go </button>
-    </form>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list" role="list" aria-label="footer">
+          <li><a href="#" class="footer__nav-item">Home</a></li>
+          <li><a href="#" class="footer__nav-item">Pricing</a></li>
+          <li><a href="#" class="footer__nav-item">Products</a></li>
+          <li><a href="#" class="footer__nav-item">About Us</a></li>
+          <li><a href="#" class="footer__nav-item">Careers</a></li>
+          <li><a href="#" class="footer__nav-item">Community</a></li>
+          <li><a href="#" class="footer__nav-item">Privacy Policy</a></li>
+        </ul>
+      </nav>
 
-    <p class="footer__copyright"> Copyright 2020. All Rights Reserved</p>
+      <form action="" class="footer__form">
+        <input class="footer__email-input" type="email" placeholder="Updates in your inbox…" required>
+        <button class="footer__button button"> Go </button>
+      </form>
+
+      <p class="footer__copyright"> Copyright 2020. All Rights Reserved</p>
+    </div>
   </footer>
 </body>
 
