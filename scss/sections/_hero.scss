@@ -1,0 +1,48 @@
+.hero {
+    min-height: 95vh;
+
+    .section__container {
+        --padding: 1.5rem;
+
+        justify-items: left;
+    }
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    text-align: center;
+    max-width: 35ch;
+
+    @media (min-width: 50em) {
+        text-align: left;
+    }
+
+}
+
+.hero__header {
+    letter-spacing: -1.5px; // ??
+}
+
+.hero__content {
+    color: var(--blue2);
+
+}
+
+.hero__figure {
+    order: -1;
+    overflow: hidden;
+    max-width: 100%;
+
+    @media (min-width: 50em) {
+        order: 2;
+        max-width: 100%;
+
+        .hero__img {
+            max-width: 103%;
+        }
+
+    }
+}
