@@ -11,6 +11,7 @@
         @media (min-width: 50em) {
             grid-template-columns: 0.5fr 1fr 0.8fr;
             grid-template-rows: 1fr 0.9fr;
+            gap: 0;
         }
     }
 
@@ -35,16 +36,26 @@
 
 .footer__socials {
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 260px;
+    width: 100%;
+    gap: 5px;
 
     .footer__socials-icon {
         width: 32px;
+
+        @media (min-width: 50em) {
+            width: 20px;
+        }
     }
 
     @media (min-width: 50em) {
         justify-self: start;
         align-self: self-end;
+        justify-content: start;
         gap: 0.8rem;
+        width: auto;
     }
 }
 
@@ -103,6 +114,7 @@
     font-weight: 200;
     font-size: 12px;
     letter-spacing: 0.2px;
+    text-align: center;
 
     @media (min-width: 50em) {
         justify-self: end;
