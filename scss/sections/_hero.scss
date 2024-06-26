@@ -4,45 +4,39 @@
     .section__container {
         --padding: 1.5rem;
 
-        justify-items: left;
+        @media (min-width: 50em) {
+            justify-items: left;
+        }
     }
 }
 
 .hero__text {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: start;
+    gap: var(--gap-2);
+    align-items: center;
     text-align: center;
-    max-width: 35ch;
 
     @media (min-width: 50em) {
         text-align: left;
+        align-items: start;
     }
-
 }
 
 .hero__header {
-    letter-spacing: -1.5px; // ??
+    letter-spacing: -1.5px; // ??? headers
 }
 
 .hero__content {
-    color: var(--blue2);
-
+    color: var(--blue2); // ??? contents
+    max-width: 32ch;
 }
 
 .hero__figure {
     order: -1;
     overflow: hidden;
-    max-width: 100%;
 
     @media (min-width: 50em) {
         order: 2;
-        max-width: 100%;
-
-        .hero__img {
-            max-width: 103%;
-        }
-
     }
 }
