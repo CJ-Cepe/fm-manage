@@ -22,3 +22,27 @@ hamBtn.addEventListener('click', () => {
         bodyScrollLockUpgrade.enableBodyScroll(body)
     }
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const splide = new Splide('.splide', {
+        type: 'loop',
+        drag: 'free',
+        snap: true,
+        focus: 'center',
+        autoWidth: true,
+        start: 1,
+        gap: '2rem',
+        padding: '1.5rem',
+
+        pagination: true,
+        mediaQuery: 'min',
+        breakpoints: {
+            600: {
+                pagination: false,
+            }
+        }
+    });
+
+    splide.mount();
+})
