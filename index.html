@@ -213,8 +213,11 @@
       </nav>
 
       <form action="" class="footer__form">
-        <input class="footer__email-input" type="email" placeholder="Updates in your inbox…" required>
+        <input class="footer__email-input" type="email" placeholder="Updates in your inbox…"
+          aria-describedby="error-message" aria-invalid="false" required>
         <button class="footer__button button"> Go </button>
+        <p id="error-message" class="footer__email-error" aria-live="assertive" aria-hidden="true">Please insert a valid
+          email.</p>
       </form>
 
       <p class="footer__copyright"> Copyright 2020. All Rights Reserved</p>

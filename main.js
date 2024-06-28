@@ -23,7 +23,6 @@ hamBtn.addEventListener('click', () => {
     }
 })
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const splide = new Splide('.splide', {
         type: 'loop',
@@ -45,4 +44,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     splide.mount();
+})
+
+const submitBtn = document.querySelector('.footer__button');
+const emailInput = document.querySelector('.footer__email-input');
+const emailError = document.querySelector('.footer__email-error');
+const emailForm = document.querySelector('.footer__form');
+
+submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(emailInput.value)) {
+        emailError.style.display = 'block';
+        emailError.setAttribute('aria-hidden', 'false');
+
+        emailInput.style.outline = '2px solid var(--red1)';
+        emailInput.setAttribute('aria-invalid', 'true');
+    } else {
+        emailError.style.display = 'none';
+        emailError.setAttribute('aria-hidden', 'true');
+
+        emailInput.style.outline = 'none';
+        emailInput.setAttribute('aria-invalid', 'false');
+        emailForm.submit();
+        emailForm.reset();
+
+    }
 })
