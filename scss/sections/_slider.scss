@@ -1,0 +1,57 @@
+.splide {
+    text-align: center;
+}
+
+#splide__heading {
+    //??
+    font-size: var(--fs-40);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--gap-2);
+    letter-spacing: -1.5px;
+    margin-bottom: 4rem;
+}
+
+.splide__track {
+    margin-bottom: 4rem;
+}
+
+.splide__list {
+    background-color: rgb(103, 255, 126);
+    gap: 2rem;
+}
+
+.splide__slide {
+    max-width: 538px; //??
+    height: auto;
+    background-color: antiquewhite;
+    position: relative;
+    padding: 2.1rem 0 0;
+}
+
+// ====================
+//testimonial
+.testimonial {
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 4rem 2rem 2rem;
+    /* background: var(--clr-neutral-200); */
+
+    &__img {
+        width: 72px;
+        aspect-ratio: 1 / 1;
+        border-radius: 100vmax;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__author {
+        font-size: --fw-16px;
+        margin-bottom: 1.5rem; // ??
+    }
+
+    &__content {}
+}
