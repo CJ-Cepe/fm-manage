@@ -13,6 +13,8 @@
     href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" async></script>
   <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"
     async></script>
   <script src="./main.js" defer></script>
@@ -48,7 +50,7 @@
 
   <main>
     <section class="hero">
-      <div class="container">
+      <div class="section__container section__container--grid">
         <div class="hero__text">
           <h1 class="hero__header">Bring everyone together to build better products.</h1>
           <p class="hero__content">Manage makes it simple for software teams to plan day-to-day
@@ -62,10 +64,10 @@
     </section>
 
     <section class="overview">
-      <div class="container">
+      <div class="section__container section__container--grid">
         <div class="overview__text">
           <h2 class="overview__header">What’s different about Manage?</h2>
-          <p class="overview__content">Manage provides all the functionality your team needs, without
+          <p class="overview__content content">Manage provides all the functionality your team needs, without
             the complexity. Our software is tailor-made for modern digital
             product teams.</p>
         </div>
@@ -75,27 +77,27 @@
             <li class="overview__benefit">
               <div class="overview__benefit-content">
                 <h3 class="overview__benefit-title">Track company-wide progress</h3>
-                <p class="overview__benefit-description">See how your day-to-day tasks fit into the wider vision. Go
-                  from
-                  tracking progress at the milestone level all the way done to the
+                <p class="overview__benefit-description content">See how your day-to-day tasks fit into the wider
+                  vision. Go
+                  from tracking progress at the milestone level all the way done to the
                   smallest of details. Never lose sight of the bigger picture again.</p>
               </div>
             </li>
             <li class="overview__benefit">
               <div class="overview__benefit-content">
                 <h3 class="overview__benefit-title">Advanced built-in reports</h3>
-                <p class="overview__benefit-description">Set internal delivery estimates and track progress toward
-                  company
-                  goals. Our customisable dashboard helps you build out the reports
+                <p class="overview__benefit-description content">Set internal delivery estimates and track progress
+                  toward
+                  company goals. Our customisable dashboard helps you build out the reports
                   you need to keep key stakeholders informed.</p>
               </div>
             </li>
             <li class="overview__benefit">
               <div class="overview__benefit-content">
                 <h3 class="overview__benefit-title">Everything you need in one place</h3>
-                <p class="overview__benefit-description">Stop jumping from one service to another to communicate, store
-                  files,
-                  track tasks and share documents. Manage offers an all-in-one team
+                <p class="overview__benefit-description content">Stop jumping from one service to another to
+                  communicate, store
+                  files, track tasks and share documents. Manage offers an all-in-one team
                   productivity solution.</p>
               </div>
             </li>
@@ -105,44 +107,66 @@
     </section>
 
     <!-- TO REDO -->
-    <section class="carousel">
-      <h2>What they’ve said</h2>
-      <div class="testimonial">
-        <h3 class="testimonial__author">Anisha Li</h3>
-        <p class="testimonial__content">“Manage has supercharged our team’s workflow. The ability to maintain
-          visibility on larger milestones at all times keeps everyone motivated.”</p>
+    <section class="splide" aria-labelledby="carousel-heading">
+      <h2 id="splide__heading">What they’ve said</h2>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+
+          <li class="splide__slide">
+            <div class="testimonial">
+              <img src="./images/avatar-anisha.png" alt="" class="testimonial__img">
+              <h3 class="testimonial__author">Anisha Li</h3>
+              <p class="testimonial__content">“Manage has supercharged our team’s workflow. The ability to maintain
+                visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="testimonial">
+              <img src="./images/avatar-ali.png" alt="" class="testimonial__img">
+              <h3 class="testimonial__author">Ali Bravo</h3>
+              <p class="testimonial__content">“We have been able to cancel so many other subscriptions since using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.”</p>
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="testimonial">
+              <img src="./images/avatar-richard.png" alt="" class="testimonial__img">
+              <h3 class="testimonial__author">Richard Watts</h3>
+              <p class="testimonial__content">“Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can’t stop recommending them to everyone I talk to!”</p>
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="testimonial">
+              <img src="./images/avatar-shanai.png" alt="" class="testimonial__img">
+              <h3 class="testimonial__author">Shanai Gough</h3>
+              <p class="testimonial__content">“Their software allows us to track, manage and collaborate on our projects
+                from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="testimonial">
-        <h3 class="testimonial__author">Ali Bravo</h3>
-        <p class="testimonial__content">“We have been able to cancel so many other subscriptions since using
-          Manage. There is no more cross-channel confusion and everyone is much
-          more focused.”</p>
-      </div>
-      <div class="testimonial">
-        <h3 class="testimonial__author">Richard Watts</h3>
-        <p class="testimonial__content">“Manage allows us to provide structure and process. It keeps us organized
-          and focused. I can’t stop recommending them to everyone I talk to!”</p>
-      </div>
-      <div class="testimonial">
-        <h3 class="testimonial__author">Shanai Gough</h3>
-        <p class="testimonial__content">“Their software allows us to track, manage and collaborate on our projects
-          from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-      </div>
+
       <button class="button">Get Started</button>
     </section>
-    <!-- ------- -->
 
-    <section class="action">
-      <div class="container">
-        <h2 class="action__header">Simplify how your team works today.</h2>
-        <button class="action__button button" data-type="inverted">Get Started</button>
+
+    <section class="cta">
+      <div class="section__container section__container--flex">
+        <h2 class="cta__header">Simplify how your team works today.</h2>
+        <button class="cta__button button" data-type="inverted">Get Started</button>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <a href="#"><img src="./images/logo.svg" alt="manage logo" class="footer__logo"></a>
+    <div class="section__container section__container--grid">
+      <a href="#" class="footer__logo"><img src="./images/logo.svg" alt="manage logo"></a>
 
       <ul class="footer__socials">
         <li>
