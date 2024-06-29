@@ -9,13 +9,16 @@ body {
     line-height: 150%;
     position: relative;
 
-    background-image: url('../../images/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
-    background-position: top -110px right -120px;
-    background-size: #{fluid(450px , 814px)};
+    background-image: url('../../images/bg-tablet-pattern.svg'), url('../../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -110px right -120px, top 75vh right -150px;
+    background-size: #{fluid(450px , 814px)},
+    #{fluid(300px, 400px)};
 
     @media (min-width: 50em) {
-        background-position: top -250px right -120px;
+        background-position: top -250px right -120px, top calc(100vh + 400px) left -400px;
+        background-size: #{fluid(450px , 814px)},
+        #{fluid(300px , 814px)};
     }
 }
 
