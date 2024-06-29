@@ -16,6 +16,17 @@
             gap: 0;
         }
     }
+
+
+    background-image: url('../../images/bg-simplify-section-desktop.svg');
+    background-position: top left -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 50em) {
+        background-position: bottom left 300px;
+    }
+
 }
 
 .cta__header {
