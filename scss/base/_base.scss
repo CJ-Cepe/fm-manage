@@ -1,6 +1,22 @@
+@use '../utilities/function' as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--ff-primary);
     line-height: 150%;
+    position: relative;
+
+    background-image: url('../../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: top -110px right -120px;
+    background-size: #{fluid(450px , 814px)};
+
+    @media (min-width: 50em) {
+        background-position: top -250px right -120px;
+    }
 }
 
 h1,
@@ -9,6 +25,8 @@ h3 {
     line-height: 1.1;
     font-weight: var(--fw-bold);
     color: var(--blue1);
+
+
 }
 
 h1 {
