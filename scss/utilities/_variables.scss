@@ -21,15 +21,17 @@
     --fw-medium: 500;
     --fw-bold: 700;
     //size
-    --fs-13: 0.8125rem;
-    --fs-14: 0.875rem;
-    --fs-15: 0.9375rem;
-    --fs-16: 1rem;
-    --fs-30: 1.875rem;
-    --fs-40: 2.5rem;
+    --fs-13: #{fluid(12px, 13px)};
+    --fs-14: #{fluid(13px, 14px)};
+    --fs-15: #{fluid(14px, 15px)};
+    --fs-16: #{fluid(15px, 16px)};
+    --fs-30: #{fluid(16px, 30px)};
+    //36 ??
+    --fs-40: #{fluid(30px, 40px)};
     --fs-56: #{fluid(40px, 56px)};
 
     --gap-2: #{fluid(16px ,32px)};
+
 
     --break-50: 50em;
 
