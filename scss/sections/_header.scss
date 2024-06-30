@@ -1,15 +1,14 @@
 .header {
+    font-size: var(--fs-13);
+    font-weight: var(--fw-bold);
+    white-space: nowrap;
+    padding: var(--primary-padding) 0 0;
+    min-height: px-to-rem(77px);
+    /* margin-bottom: 3rem; */
+
+    position: relative;
     display: flex;
     align-items: center;
-
-    padding: 3rem 0 0 0; //??
-    min-height: 77px; //??
-    margin-bottom: 3rem;
-    position: relative;
-
-    font-size: var(--fs-14);
-    font-weight: var(--fw-medium);
-    white-space: nowrap;
 }
 
 .header__logo {
@@ -18,19 +17,19 @@
 }
 
 .header__button {
-    margin-left: auto;
+    display: none;
 
-    @media (max-width: 50em) {
-        display: none;
+    @media (min-width: 50em) {
+        margin-left: auto;
+        display: block;
     }
 }
 
-//NAV
 .header__nav {
-    width: max(370px, 40%);
+    width: auto;
 
-    @media (max-width: 50em) {
-        width: auto;
+    @media (min-width: 50em) {
+        width: max(370px, 35%);
     }
 }
 
@@ -38,12 +37,15 @@
     flex: 1;
     gap: 1rem;
     justify-content: space-between;
+
     letter-spacing: -0.5px;
     color: var(--blue1);
+    display: none;
+    font-weight: var(--fw-bold);
 
-    @media (max-width: 50em) {
-        display: none;
-        font-weight: var(--fw-bold);
+    @media (min-width: 50em) {
+        display: flex;
+        font-weight: var(--fw-medium);
     }
 }
 
@@ -61,15 +63,14 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
-//btn
 .hamburger {
     border: 0;
     cursor: pointer;
-    display: none;
     background-color: transparent;
+    display: block;
 
-    @media (max-width: 50em) {
-        display: block;
+    @media (min-width: 50em) {
+        display: none;
     }
 
     &__icon-close {
@@ -94,7 +95,7 @@
 
     ~.header__nav-list {
         position: absolute;
-        top: 120%; // ??
+        top: 140%;
         left: 0;
         right: 0;
         margin-inline: 2rem;
@@ -103,14 +104,13 @@
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
 
         border-radius: 5px;
         background-color: var(--gray1);
     }
 }
 
-// visibility
 .visibility-hidden {
     position: absolute;
     width: 1px;
