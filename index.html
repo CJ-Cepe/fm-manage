@@ -36,15 +36,16 @@
         <div class="header__nav-overlay" role="presentation" aria-hidden="true"></div>
 
         <ul role="list" class="header__nav-list nav__list" id="header__nav-list">
-          <li><a href="" class="header__nav-link">Pricing</a></li>
-          <li><a href="" class="header__nav-link">Product</a></li>
-          <li><a href="" class="header__nav-link">About Us</a></li>
-          <li><a href="" class="header__nav-link">Careers</a></li>
-          <li><a href="" class="header__nav-link">Community</a></li>
+          <li><a class="header__nav-link">Pricing</a></li>
+          <li><a class="header__nav-link">Product</a></li>
+          <li><a class="header__nav-link">About Us</a></li>
+          <li><a href="https://youtube.com/watch?v=RIgKjcQKi1I&list=PLc-bkTTZDlvXcAEBqVhiyFqN20FysBQcq&index=4"
+              class="header__nav-link" target="_blank">Careers</a></li>
+          <li><a class="header__nav-link">Community</a></li>
         </ul>
       </nav>
 
-      <button class="header__button button">Get Started</button>
+      <button class="header__button | button">Get Started</button>
     </div>
   </header>
 
@@ -53,12 +54,12 @@
       <div class="section__container section__container--grid">
         <div class="hero__text">
           <h1 class="hero__header">Bring everyone together to build better products.</h1>
-          <p class="hero__content">Manage makes it simple for software teams to plan day-to-day
+          <p class="hero__content | content">Manage makes it simple for software teams to plan day-to-day
             tasks while keeping the larger team goals in view.</p>
           <button class="hero__button button">Get Started</button>
         </div>
         <div class="hero__figure">
-          <img class="hero__img" src="./images/illustration-intro.svg" alt="">
+          <img class="hero__img" src="./images/illustration-intro1.svg" alt="" role="presentation">
         </div>
       </div>
     </section>
@@ -117,7 +118,7 @@
             <div class="testimonial">
               <img src="./images/avatar-anisha.png" alt="" class="testimonial__img">
               <h3 class="testimonial__author">Anisha Li</h3>
-              <p class="testimonial__content content">“Manage has supercharged our team’s workflow. The ability to
+              <p class="testimonial__content | content">“Manage has supercharged our team’s workflow. The ability to
                 maintain
                 visibility on larger milestones at all times keeps everyone motivated.”</p>
             </div>
@@ -127,7 +128,7 @@
             <div class="testimonial">
               <img src="./images/avatar-ali.png" alt="" class="testimonial__img">
               <h3 class="testimonial__author">Ali Bravo</h3>
-              <p class="testimonial__content content">“We have been able to cancel so many other subscriptions since
+              <p class="testimonial__content | content">“We have been able to cancel so many other subscriptions since
                 using
                 Manage. There is no more cross-channel confusion and everyone is much
                 more focused.”</p>
@@ -138,7 +139,7 @@
             <div class="testimonial">
               <img src="./images/avatar-richard.png" alt="" class="testimonial__img">
               <h3 class="testimonial__author">Richard Watts</h3>
-              <p class="testimonial__content content">“Manage allows us to provide structure and process. It keeps us
+              <p class="testimonial__content | content">“Manage allows us to provide structure and process. It keeps us
                 organized
                 and focused. I can’t stop recommending them to everyone I talk to!”</p>
             </div>
@@ -148,7 +149,8 @@
             <div class="testimonial">
               <img src="./images/avatar-shanai.png" alt="" class="testimonial__img">
               <h3 class="testimonial__author">Shanai Gough</h3>
-              <p class="testimonial__content content">“Their software allows us to track, manage and collaborate on our
+              <p class="testimonial__content | content">“Their software allows us to track, manage and collaborate on
+                our
                 projects
                 from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
             </div>
@@ -170,45 +172,60 @@
 
   <footer class="footer">
     <div class="section__container section__container--grid">
-      <a href="#" class="footer__logo"><img src="./images/logo.svg" alt="manage logo"></a>
+      <a href="#" class="footer__logo">
+        <svg class="footer__logo-svg" width="146" height="24">
+          <use xlink:href="./images/logo-thumb.svg#logo"></use>
+        </svg>
+      </a>
+
 
       <ul class="footer__socials">
         <li>
           <a href="https://www.facebook.com/" class="footer__socials-link" aria-label="facebook" target="_blank">
-            <img src="./images/icon-facebook.svg" class="footer__socials-icon" alt="facebook">
+            <svg class="icon footer__socials-icon">
+              <use xlink:href="./images/socials-thumb.svg#icon-facebook"></use>
+            </svg>
           </a>
         </li>
         <li>
           <a href="https://www.youtube.com/" class="footer__socials-link" aria-label="youtube" target="_blank">
-            <img src="./images/icon-youtube.svg" class="footer__socials-icon" alt="youtube">
+            <svg class="footer__socials-icon">
+              <use xlink:href="./images/socials-thumb.svg#icon-youtube"></use>
+            </svg>
           </a>
         </li>
         <li>
           <a href="https://x.com/" class="footer__socials-link" aria-label="twitter" target="_blank">
-            <img src="./images/icon-twitter.svg" class="footer__socials-icon" alt="twitter">
+            <svg class="footer__socials-icon">
+              <use xlink:href="./images/socials-thumb.svg#icon-twitter"></use>
+            </svg>
           </a>
         </li>
         <li>
           <a href="https://www.pinterest.com/" class="footer__socials-link" aria-label="pinterest" target="_blank">
-            <img src="./images/icon-pinterest.svg" class="footer__socials-icon" alt="pinterest">
+            <svg class="footer__socials-icon">
+              <use xlink:href="./images/socials-thumb.svg#icon-pinterest"></use>
+            </svg>
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/" class="footer__socials-link" aria-label="instagram" target="_blank">
-            <img src="./images/icon-instagram.svg" class="footer__socials-icon" alt="instagram">
+            <svg class="footer__socials-icon">
+              <use xlink:href="./images/socials-thumb.svg#icon-instagram"></use>
+            </svg>
           </a>
         </li>
       </ul>
 
       <nav class="footer__nav">
         <ul class="footer__nav-list" role="list" aria-label="footer">
-          <li><a href="#" class="footer__nav-item">Home</a></li>
-          <li><a href="#" class="footer__nav-item">Pricing</a></li>
-          <li><a href="#" class="footer__nav-item">Products</a></li>
-          <li><a href="#" class="footer__nav-item">About Us</a></li>
-          <li><a href="#" class="footer__nav-item">Careers</a></li>
-          <li><a href="#" class="footer__nav-item">Community</a></li>
-          <li><a href="#" class="footer__nav-item">Privacy Policy</a></li>
+          <li><a class="footer__nav-item">Home</a></li>
+          <li><a class="footer__nav-item">Pricing</a></li>
+          <li><a class="footer__nav-item">Products</a></li>
+          <li><a class="footer__nav-item">About Us</a></li>
+          <li><a class="footer__nav-item">Careers</a></li>
+          <li><a class="footer__nav-item">Community</a></li>
+          <li><a class="footer__nav-item">Privacy Policy</a></li>
         </ul>
       </nav>
 
