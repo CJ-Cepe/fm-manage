@@ -1,9 +1,13 @@
 .hero {
-    min-height: 95vh;
+    /* min-height: 75vh; */
+    margin-bottom: 1rem;
+    margin-top: var(--body-row-gap);
+
+    @media (min-width: 50em) {
+        margin-bottom: 0;
+    }
 
     .section__container {
-        --padding: 1.5rem;
-
         @media (min-width: 50em) {
             justify-items: left;
         }
@@ -13,8 +17,8 @@
 .hero__text {
     display: flex;
     flex-direction: column;
-    gap: var(--gap-2);
     align-items: center;
+    gap: var(--gap-2); //
     text-align: center;
 
     @media (min-width: 50em) {
@@ -23,12 +27,7 @@
     }
 }
 
-.hero__header {
-    letter-spacing: -1.5px; // ??? headers
-}
-
 .hero__content {
-    color: var(--blue2); // ??? contents
     max-width: 32ch;
 }
 

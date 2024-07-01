@@ -1,6 +1,6 @@
 .cta {
     background-color: var(--red1);
-    min-height: 220px;
+    min-height: 220px; //
 
     display: flex;
     align-items: center;
@@ -17,7 +17,6 @@
         }
     }
 
-
     background-image: url('../../images/bg-simplify-section-desktop.svg');
     background-position: top left -100px;
     background-size: cover;
@@ -31,9 +30,10 @@
 
 .cta__header {
     color: var(--gray1);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.5px; //
     width: auto;
     text-align: center;
+    font-size: 40px;
 
     @media (min-width: 50em) {
         width: 20ch;
@@ -43,7 +43,7 @@
 }
 
 .cta__button {
-    font-weight: var(--fw-bold); // ??
+    font-weight: var(--fw-bold); //
 
     @media (min-width: 50em) {
         margin-left: auto;

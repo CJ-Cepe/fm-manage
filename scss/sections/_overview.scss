@@ -1,10 +1,8 @@
 .overview {
-
     .section__container {
         align-items: start;
     }
 }
-
 
 //Left
 .overview__text {
@@ -12,20 +10,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: var(--gap-2);
+    margin-bottom: 2rem; //
 
     @media (min-width: 50em) {
         text-align: left;
         align-items: start;
-
     }
+
 }
 
 .overview__header {
-    font-size: var(--fs-40);
-    font-weight: var(--fw-bold);
-    margin-bottom: var(--gap-2);
-    letter-spacing: -1.5px;
+    line-height: 44px;
+    padding: 0 1rem;
+
+    @media (min-width: 50em) {
+        line-height: 1.1;
+        padding: 0;
+    }
 }
 
 .overview__content {
@@ -34,17 +36,12 @@
 
 
 //right
-.overview__benefits {}
-
 .overview__list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
     counter-reset: count;
 }
-
-.overview__benefit {}
 
 .overview__benefit-content {
     display: grid;
@@ -77,44 +74,33 @@
     }
 
     &::after {
-        @media (max-width: 50em) {
-            --red2: hsl(13, 45%, 92%);
-            content: "";
-            height: 100%;
-            grid-column: 1 / -1;
-            grid-row: 1 / 2;
-            z-index: -1;
-            display: block;
-            background-color: var(--red2);
-            border-radius: 100vmax 0 0 100vmax;
-            box-shadow: 10em 0 0 var(--red2);
+        --red2: hsl(13, 45%, 92%);
+        content: "";
+        height: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        z-index: -1;
+        display: block;
+        background-color: var(--red2);
+        border-radius: 100vmax 0 0 100vmax;
+        box-shadow: 10em 0 0 var(--red2);
+
+        @media (min-width: 50em) {
+            all: unset;
         }
     }
 }
 
 .overview__benefit-title {
-    letter-spacing: -0.5px;
-
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
-
-
 
 .overview__benefit-description {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
 
     @media (min-width: 30em) {
-        //??
         grid-column: 2 / 3;
     }
-}
-
-.content {
-    //move to base
-    font-size: var(--fs-16);
-    color: var(--blue2);
-    opacity: 90%;
-    line-height: 1.8;
 }
