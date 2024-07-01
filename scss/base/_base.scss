@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-image: url('../../images/bg-tablet-pattern.svg'), url('../../images/bg-tablet-pattern.svg');
+    background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: top -80px right -130px, top 75vh right -150px;
     background-size: #{fluid(450px , 814px)},
