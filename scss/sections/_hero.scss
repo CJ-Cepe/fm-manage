@@ -1,10 +1,11 @@
 .hero {
     /* min-height: 75vh; */
     margin-bottom: 1rem;
-    margin-top: var(--body-row-gap);
+    margin-top: 3rem; //
 
     @media (min-width: 50em) {
         margin-bottom: 0;
+        margin-top: 5rem; //
     }
 
     .section__container {
