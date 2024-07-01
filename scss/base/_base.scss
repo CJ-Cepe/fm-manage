@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -20,9 +21,13 @@ body {
     #{fluid(300px, 400px)};
 
     @media (min-width: 50em) {
-        background-position: top -200px right -120px, top calc(100vh + 400px) left -400px;
+        background-position: top -200px right -120px, top calc(100vh + 300px) left -550px;
         background-size: #{fluid(450px , 814px)},
         #{fluid(300px , 814px)};
+    }
+
+    * {
+        transition: color 0.1s ease, background-color 0.1s ease, fill 0.1s ease;
     }
 }
 
@@ -37,10 +42,6 @@ main {
     flex-direction: column;
     row-gap: var(--body-row-gap);
 }
-
-/* section {
-    background-color: antiquewhite;
-} */
 
 // ---- HEADERS ----
 h1,
