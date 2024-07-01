@@ -15,12 +15,12 @@ body {
 
     background-image: url('../../images/bg-tablet-pattern.svg'), url('../../images/bg-tablet-pattern.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: top -110px right -120px, top 75vh right -150px;
+    background-position: top -80px right -130px, top 75vh right -150px;
     background-size: #{fluid(450px , 814px)},
     #{fluid(300px, 400px)};
 
     @media (min-width: 50em) {
-        background-position: top -250px right -120px, top calc(100vh + 400px) left -400px;
+        background-position: top -200px right -120px, top calc(100vh + 400px) left -400px;
         background-size: #{fluid(450px , 814px)},
         #{fluid(300px , 814px)};
     }
@@ -37,6 +37,10 @@ main {
     flex-direction: column;
     row-gap: var(--body-row-gap);
 }
+
+/* section {
+    background-color: antiquewhite;
+} */
 
 // ---- HEADERS ----
 h1,
