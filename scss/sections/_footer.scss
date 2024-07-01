@@ -44,9 +44,15 @@
 
     .footer__socials-icon {
         width: 32px;
+        fill: var(--gray1);
+        aspect-ratio: 1;
 
         @media (min-width: 50em) {
             width: 20px;
+        }
+
+        &:is(:hover, :focus) {
+            fill: var(--red1);
         }
     }
 
@@ -70,12 +76,16 @@
     display: flex;
     justify-content: center;
 
+    @media (min-width: 50em) {
+        grid-row: 1 / 3;
+    }
+
     .footer__nav-list {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
 
-        column-gap: 30%;
+        column-gap: 35%;
         row-gap: 0.8rem;
         width: 90%;
         max-height: 150px;
@@ -93,8 +103,8 @@
         }
     }
 
-    @media (min-width: 50em) {
-        grid-row: 1 / 3;
+    .footer__nav-item:hover {
+        color: var(--red1);
     }
 }
 
