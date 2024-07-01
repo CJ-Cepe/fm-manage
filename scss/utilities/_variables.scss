@@ -3,14 +3,16 @@
 :root {
 
     // COLORS
-    //primary
     --red1: hsl(12, 88%, 59%);
-    --blue1: hsl(228, 39%, 23%);
-    //secondary
-    --blue2: hsl(227, 12%, 61%);
-    --blue3: hsl(233, 12%, 13%);
     --red2: hsl(13, 100%, 70%);
     --red3: hsl(13, 85%, 46%);
+    --red4: hsl(13, 91%, 74%);
+
+
+    --blue1: hsl(228, 39%, 23%);
+    --blue2: hsl(227, 12%, 61%);
+    --blue3: hsl(233, 12%, 13%);
+
     --gray1: hsl(0, 0%, 98%);
 
     // TYPO
@@ -24,30 +26,15 @@
     --fs-13: #{fluid(12px, 13px)};
     --fs-14: #{fluid(13px, 14px)};
     --fs-15: #{fluid(14px, 15px)};
-    --fs-16: #{fluid(15px, 16px)};
+    --fs-16: #{fluid(14px, 16px)};
     --fs-30: #{fluid(16px, 30px)};
     //36 ??
     --fs-40: #{fluid(30px, 40px)};
     --fs-56: #{fluid(40px, 56px)};
 
-    --gap-2: #{fluid(16px ,32px)};
+    --gap-2: #{fluid(16px ,32px)}; // to change name? flex-row-gap: 2rem;
+    --grid-col-gap: 1.5rem;
+    --body-row-gap: 7.5rem;
 
-
-    --break-50: 50em;
-
-    --fs-body: var(--fs-14);
-    --fs-primary-heading: var(--fs-40);
-    --fs-secondary-heading: var(--fs-30);
-    --fs-nav: var(--fs-14);
-    --fs-button: var(--fs-13);
-
-    @media (min-width: 800px) {
-        :root {
-            --fs-body: var(--fs-15);
-            --fs-primary-heading: var(--fs-56);
-            --fs-secondary-heading: var(--fs-40);
-
-            --fs-nav: var(--fs-13);
-        }
-    }
+    --primary-padding: 3.5rem; //-tb
 }
