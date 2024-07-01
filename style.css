@@ -69,7 +69,7 @@ body {
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  background-image: url("../../images/bg-tablet-pattern.svg"), url("../../images/bg-tablet-pattern.svg");
+  background-image: url("/images/bg-tablet-pattern.svg"), url("/images/bg-tablet-pattern.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: top -80px right -130px, top 75vh right -150px;
   background-size: clamp(28.13rem, 58.24vw + 14.48rem, 50.88rem), clamp(18.75rem, 16vw + 15rem, 25rem);
@@ -527,7 +527,7 @@ a {
   min-height: 220px;
   display: flex;
   align-items: center;
-  background-image: url("../../images/bg-simplify-section-desktop.svg");
+  background-image: url("/images/bg-simplify-section-desktop.svg");
   background-position: top left -100px;
   background-size: cover;
   background-repeat: no-repeat;
